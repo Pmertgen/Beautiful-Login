@@ -5,7 +5,7 @@ if (isset($_POST["submit"])) {
 	$email = $_POST["email"];
 	$pw = password_hash($_POST["pw"], PASSWORD_DEFAULT);
 
-	echo $email . "</br>" . $pw;
+	echo "Mail: " . $email . "</br>" . "Password: " . $pw;
 
 }
 
