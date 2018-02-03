@@ -10,12 +10,15 @@
 </head>
 <body>
 
-<div class="bg-secondary">
+<div class="card bg-primary mx-auto">
+	<div class="card-header text-center">Beautiful Login</div>
+	<div class="card-body mx-auto">
 <form action="index.php" method="post">
 <input type="email" name="email" placeholder="E-Mail">
 <input type="password" name="pw" placeholder="Password">
-<button type="submit" name="submit">Login</button>
+<button class="btn-secondary" type="submit" name="submit">Login</button>
 </form>
+</div>
 </div>
 
 </body>
