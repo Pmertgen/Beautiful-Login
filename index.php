@@ -13,17 +13,23 @@
 <body>
 
 <div class="card bg-primary mx-auto">
-	<div class="card-header text-center text-light">You are now logged in</div>
+	<div class="card-header text-center text-light">Beautiful Login</div>
 	<div class="card-body mx-auto">
 		<?php 
 
-if (isset($_POST["submit"])) {
+if (isset($_POST["submit"]) && !empty($_POST["email"])) {
 
 		$email = $_POST["email"];
 		$pw = password_hash($_POST["pw"], PASSWORD_DEFAULT);
 
+	echo "You are logged in</br>";
 	echo "Mail: " . $email . "</br>" . "Password: " . $pw;
 
+}
+
+else{
+
+	echo "You are not logged in, please go back";
 }
 
 
