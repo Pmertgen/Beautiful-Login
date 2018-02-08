@@ -12,3 +12,14 @@ button {
 
 
 }
+
+#main{
+
+
+	background: url("Pics/background.jpeg");
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 700px;
+
+	
+}
